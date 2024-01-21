@@ -1,11 +1,4 @@
-#!/bin/bash
-
-# Path to the private key file
-private_key="~/.ssh/school"
-
-# Server IP address or hostname
-server_address="54.157.148.115"
-
-# SSH command using single-character flags
-ssh -i "$private_key" ubuntu@"$server_address"
+#!/usr/bin/env bash
+#conects to the server 54.157.148.115 using the private key ~/.ssh/school
+ssh -i ~/.ssh/school ubuntu@54.157.148.115
 
