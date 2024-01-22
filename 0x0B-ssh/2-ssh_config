@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#configuring my server to use the specified private key and authorise it to use no password but instead the key
+HostName 54.157.148.115
+	IdentifyFile ~/.ssh/school
+	PasswordAuthentication no	
