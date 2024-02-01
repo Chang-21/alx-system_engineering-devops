@@ -1,5 +1,23 @@
 #!/usr/bin/env bash
 # configures a server to listening on port 80 of all servers active IPv4 IPs
 
-sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+# Install netcat for port checking
+apt-get install -y netcat
+
+# Check if Nginx is currently listening on port 80
+nc -zv 0 80
+
+# Check Nginx status
+service nginx status
+
+# Ensure Nginx is configured to listen on port 80
+sed -i '/listen[[:space:]]\+80;/d' /etc/nginx/sites-available/default
+sed -i '/listen[[:space:]]\+\[::\]:80;/d' /etc/nginx/sites-available/default
+echo "listen 80;" >> /etc/nginx/sites-available/default
+
+# Restart Nginx to apply changes
+service nginx restart
+
+# Check if Nginx is now listening on port 80
+nc -zv 0 80
+
