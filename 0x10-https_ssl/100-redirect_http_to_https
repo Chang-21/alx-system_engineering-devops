@@ -41,11 +41,11 @@ frontend changcodes-frontend
         default_backend changcodes-backend
 
 frontend changcodes-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/changcodes.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.changcodes.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend changcodes-backend
 
 backend changcodes-backend
         balance roundrobin
-        server 151666-web-01 100.25.190.21:80 check
-        server 151666-web-02 54.160.77.90:80 check
+        server 79384-web-01 18.210.15.69:80 check
+        server 79384-web-02 54.88.168.40:80 check
