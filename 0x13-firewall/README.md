@@ -1,5 +1,9 @@
 # 0X13.FIREWALL
 in this project i learned about firewalls from their function, types and their history
+
+
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/284/V1HjQ1Y.png"/>
+
 ## Firewalls
 + Network security system that monitors and controls incoming and outgoing network traffic based on predetermined rules
 + they establishe a barrier between a trusted network and an untrusted network e.g the internet
