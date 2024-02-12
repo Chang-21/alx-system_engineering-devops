@@ -1,4 +1,9 @@
 # 0X13.FIREWALL
+
++ Devops 
++ SysAdmin
++ Security
+
 in this project i learned about firewalls from their function, types and their history
 
 
@@ -14,6 +19,9 @@ There are two main firewalls
 + host-based system
 
 More information on [firewalls](https://en.wikipedia.org/wiki/Firewall_%28computing%29) 
+
+#SERVER WITHOUT FIREWALL
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/155/holbertonschool-firewall.gif"/>
 
 ### Tasks
 
